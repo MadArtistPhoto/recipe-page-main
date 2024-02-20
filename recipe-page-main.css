@@ -1,0 +1,180 @@
+/*  recipe-page-main */
+
+:root
+{
+    --Nutmeg: hsl(14, 45%, 36%); /*ingredients, instructions nutririon*/
+    --Dark-Raspberry: hsl(332, 51%, 32%); /*preparation time text*/
+    --White: hsl(0, 0%, 100%); /*card background*/
+    --Rose-White: hsl(330, 100%, 98%); /*preparation time background*/
+    --Eggshell: hsl(30, 54%, 90%); /*screen background*/
+    --Light-Grey: hsl(30, 18%, 87%); /*<hr> lines*/
+    --Wenge-Brown: hsl(30, 10%, 34%); /*Simple Omlette Recipe text*/
+    --Dark-Charcoal: hsl(24, 5%, 18%); /*main text*/
+
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    font-size: 16px;
+}
+
+/* Normalize CSS */
+*,
+*::before,
+*::after 
+{
+  box-sizing: border-box;
+}
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font: inherit;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+/* End Normalize CSS */
+
+/* Utility Classes */
+.mar-bot
+{
+  margin-bottom: 20px;
+}
+/* End Utility Classes */
+
+/* Body Container Main CSS */
+body
+{
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+}
+
+#container
+{
+    width: 100%;
+    background-color: var(--eggshell);
+    display: flex;
+    justify-content: center;
+}
+
+main
+{
+  width: 375px;
+  background-color: var(--white);
+}
+/* End Body Container Main CSS */
+
+
+.simple
+{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 2rem;
+  margin: 20px ;
+}
+
+.content
+{
+  margin: 25px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--Dark-Charcoal);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.preparation
+{
+  background-color: var(--Rose-White);
+  border-radius: 10px;
+  padding: 20px 50px;
+}
+
+.prep
+{
+  color: var(--Dark-Raspberry);
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.preparation li
+{
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.preparation li::marker
+{
+  color: var(--Dark-Raspberry);
+}
+
+.bold
+{
+  font-weight: 600;
+}
+
+.ingredients h2, .instructions h2, .nutrition h2
+{
+  color: var(--Nutmeg);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.ingredients li, .instructions li
+{
+  margin: 0px 20px;
+  padding-left: 15px;
+}
+
+li::marker
+{
+  color: var(--Nutmeg);
+  font-weight: 600;
+}
+
+hr
+{
+  color: var(--Light-Grey);
+}
+
+
+
+@media screen and (min-width: 500px)
+{
+    #container
+    {
+      max-width: 1440px;
+      margin: auto;
+      background-color: var(--Eggshell);
+    } 
+
+    main
+    {
+      width: 100%;
+      max-width: 740px;
+      padding: 10px 20px;
+      margin: 50px 0px;
+      background-color: var(--White);
+      border-radius: 20px;
+    }
+
+    img
+    {
+      padding: 20px;
+    }
+
+    .simple
+    {
+      margin: 20px 0px;
+    }
+}
