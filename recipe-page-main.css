@@ -41,7 +41,7 @@ img{
 /* Utility Classes */
 .mar-bot
 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 /* End Utility Classes */
 
@@ -50,13 +50,14 @@ body
 {
     width: 100vw;
     height: 100%;
+    overflow-x: hidden;
     background-color: black;
 }
 
 #container
 {
     width: 100%;
-    background-color: var(--eggshell);
+    background-color: var(--Eggshell);
     display: flex;
     justify-content: center;
 }
@@ -64,32 +65,35 @@ body
 main
 {
   width: 375px;
-  background-color: var(--white);
+  background-color: var(--White);
 }
 /* End Body Container Main CSS */
 
-
-.simple
-{
-  font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-size: 2rem;
-  font-style: normal;
-  line-height: 2rem;
-  margin: 20px ;
-}
-
 .content
 {
-  margin: 25px;
+  margin: 30px;
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   color: var(--Dark-Charcoal);
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+.simple
+{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  font-style: normal;
+  margin: 35px 0px 28px 0px;
+}
+
+.intro
+{
+  padding: 0px;
+}
 .preparation
 {
   background-color: var(--Rose-White);
@@ -100,15 +104,18 @@ main
 .prep
 {
   color: var(--Dark-Raspberry);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  margin-bottom: 10px;
+  padding: 5px 0px 18px 0px;
+  margin-bottom: 0px;
 }
 
 .preparation li
 {
   vertical-align: middle;
   padding-left: 20px;
+  line-height: 1.25rem;
+  margin-bottom: 10px;
 }
 
 .preparation li::marker
@@ -125,15 +132,17 @@ main
 {
   color: var(--Nutmeg);
   font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1.75rem;
   font-style: normal;
+  margin: 35px 0px 25px 0px;
 }
 
 .ingredients li, .instructions li
 {
-  margin: 0px 20px;
-  padding-left: 15px;
+  margin: 0px 0px 0px 25px;
+  padding-left: 20px;
+  margin-bottom: 8px;
 }
 
 li::marker
@@ -142,39 +151,93 @@ li::marker
   font-weight: 600;
 }
 
+
 hr
 {
-  color: var(--Light-Grey);
+  background-color: var(--Light-Grey);
+  border: none;
+  height: 1px;
 }
 
+table
+{
+  border-collapse: collapse;
+  margin-top: 10px;
+}
 
+td
+{
+  width: 150px;
+  padding: 12px 30px;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+.bottom
+{
+border-bottom: none;
+}
+
+.weight-color
+{
+  font-weight: 600;
+  color: var(--Nutmeg);
+  padding: 12px 15px;
+}
 
 @media screen and (min-width: 500px)
 {
+
     #container
     {
+      width: 100%;
       max-width: 1440px;
       margin: auto;
-      background-color: var(--Eggshell);
     } 
 
     main
     {
       width: 100%;
       max-width: 740px;
-      padding: 10px 20px;
-      margin: 50px 0px;
-      background-color: var(--White);
+      padding: 40px 40px;
+      margin: 120px 0px;
       border-radius: 20px;
     }
 
     img
     {
-      padding: 20px;
+      border-radius: 15px;
+    }
+    .content
+    {
+      margin: 0px;
     }
 
     .simple
     {
-      margin: 20px 0px;
+      font-size: 2.5rem;
+      line-height: 1.5rem;
+      margin: 45px 0px 33px 0px;
     }
+
+    table
+    {
+      width: 100%;
+      padding: 0px 0px;
+    }
+
+    td
+    {
+      padding: 12px 35px;
+    }
+
+    .weight-color
+    {
+      padding: 12px 5px;
+    }
+
+    .bottom
+    {
+      padding-bottom: 0px;
+    }
+   
 }
