@@ -17,6 +17,22 @@
     font-size: 16px;
 }
 
+@font-face
+{
+  font-family: 'YoungSerif';
+  src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Outfit';
+  src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Normalize CSS */
 *,
 *::before,
@@ -82,7 +98,7 @@ main
 
 .simple
 {
-  font-family: "Young Serif", serif;
+  font-family: 'YoungSerif', serif;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 2.25rem;
