@@ -44,11 +44,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 -I printed out the designs, both desktop and mobile. That gave me a visual of the finished product I could reference without interuppting anything on my screens. It also gave me a place I could make notes about layout.
 
--Formattiing the <li> items was a challenge. Changing the color of the list bullets and numbers, and setting seperate margins and padding for the bullets/numbers and items took a bit of research.
+-Formatting the LIST items was a challenge. Changing the color of the list bullets and numbers, and setting seperate margins and padding for the bullets/numbers and items took a bit of research.
 
--I used a <table> for the Nutrition data. Getting the layout right took a bit of tweaking.
+-I used a TABLE for the Nutrition data. Getting the layout right took a bit of tweaking.
 
--I had an issue with <div> sizes being larger than their declared size (ie; width:300px would actually be about 330px wide on the screen). It took a while to chase it down. I forgot that I had changed the magnification on Firefox to 110% (combination of old eyes and large hi-res monitor makes the standard browser text small).
+-I had an issue with DIV sizes being larger than their declared size (ie; width:300px would actually be about 330px wide on the screen). It took a while to chase it down. I forgot that I had changed the magnification on Firefox to 110% (combination of old eyes and large hi-res monitor makes the standard browser text small).
 
 ### Continued development
 
@@ -61,7 +61,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Author
 
 - Website - [My Frontend Mentor Landing Page](https://madartistphoto.github.io/FM-Landing-Page/)
-- Frontend Mentor - [John](https://www.frontendmentor.io/profile/MadArtistPhoto))
+- Frontend Mentor - [John](https://www.frontendmentor.io/profile/MadArtistPhoto)
 
 
 ## Acknowledgments
